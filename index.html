@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+ <style>
+    @keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+</style>
+<head>
+    <meta charset="utf-8" />
+    <title>Home Finder</title>
+
+    <link rel="stylesheet" type="text/css" href="style/index.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="heading">
+        <h1 id="title">Home Finder</h1>
+        <h2 id = "text">Scroll mouse to choose options</h2>
+    </div>
+
+    <canvas id="main" width="700" height="400"></canvas>
+
+    <div id="mouse_coords">*(<span id="mouse_x">x</span>, <span id="mouse_y">y</span>)</div>
+    <div id="brush_type_back">
+        <div id="brush_type">Start</div>
+    </div>
+
+    <script src="scripts/algos/astar.js"></script>
+
+    <script src="scripts/globs.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>
